@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manajemen_user.EditUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/input_profil_pengguna"
+                    android:layout_marginBottom="16dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#355c7d"/>
+
+                <!--Username-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Username"
+                    android:lines="1"
+                    android:autofillHints="username" />
+
+                <!--Nama Lengkap-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_lengkap"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Nama Lengkap"
+                    android:lines="1"
+                    android:autofillHints="nama lengkap" />
+
+                <!--Tempat Lahir-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tempat_lahir"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_tempat_lahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Tempat Lahir"
+                    android:lines="1"
+                    android:autofillHints="Tempat Lahir" />
+
+                <!--Tanggal Lahir-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal_lahir"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_tgllahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:hint="yyyy_mm_dd"
+                    android:lines="1"
+                    android:autofillHints="tgllahir" />
+
+                <!--Profesi-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profesi"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_profesi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Profesi"
+                    android:lines="1"
+                    android:autofillHints="Profesi" />
+
+                <!--Nomor Hp-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nomor_hp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_nohp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Nomor HP"
+                    android:lines="1"
+                    android:autofillHints="Nomor HP" />
+
+                <!--Email-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:lines="1"
+                    android:autofillHints="Email" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Form Input Pemasukan"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#355c7d"/>
+
+                <TextView
+                    android:id="@+id/tv_item_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="start"
+                    android:text="@string/date"
+                    android:textSize="15sp" />
+
+                <!--Pemasukan Perbulan-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pemasukan_perbulan"
+                    android:gravity=""
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_pemasukan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Pemasukan Perbulan"
+                    android:lines="1"
+                    android:autofillHints="Pemasukan Perbulan" />
+
+                <Button
+                    android:id="@+id/btn_simpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/mybutton"
+                    android:text="@string/simpan"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

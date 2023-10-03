@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:state_pressed="true" >-->
+<!--        <shape>-->
+<!--            &lt;!&ndash; Soild digunakan untuk Membentuk Warna Block &ndash;&gt;-->
+
+<!--            &lt;!&ndash; Stroke digunakan untuk Membentuk Border/Garis Tepi &ndash;&gt;-->
+<!--            <stroke-->
+<!--                android:width="1dp"-->
+<!--                android:startColor="#015AE0"-->
+<!--                android:centerColor="#8A92D7"/>-->
+<!--            &lt;!&ndash; Corners digunakan untuk Membentuk Sudut, semakin besar radius maka akan semakin tumpul sudutnya &ndash;&gt;-->
+<!--&lt;!&ndash;            <corners&ndash;&gt;-->
+<!--&lt;!&ndash;                android:radius="3dp" />&ndash;&gt;-->
+<!--            <padding-->
+<!--                android:left="10dp"-->
+<!--                android:top="10dp"-->
+<!--                android:right="10dp"-->
+<!--                android:bottom="10dp" />-->
+<!--        </shape>-->
+<!--    </item>-->
+    <item>
+        <shape>
+
+            <!-- Gradient digunakan untuk Membentuk Warna Gradient, dan itu bisa di bentuk dari 2 atau pun 3 warna. -->
+            <gradient
+                android:startColor="#8A92D7"
+                android:endColor="#015AE0"
+                />
+            <stroke
+                android:width="0dp"
+                android:color="#2f6699" />
+<!--            <corners-->
+<!--                android:radius="4dp" />-->
+<!--            <padding-->
+<!--                android:left="10dp"-->
+<!--                android:top="10dp"-->
+<!--                android:right="10dp"-->
+<!--                android:bottom="10dp" />-->
+        </shape>
+    </item>
+</selector>

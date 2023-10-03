@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".laporan.manajemen_laporan_finansial_planner.LaporanFinansialPlannerActivity">
+
+<!--title top bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient_layout"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--   layout Title PlannyUP!   -->
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/planny_up"
+            android:fontFamily="@font/lilita_one"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+<!--end title top bar-->
+
+<!--    Content-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="9dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="73dp">
+
+            <!-- Card view for displaying the -->
+            <!-- Pie chart and details of pie chart -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/laporan_financial_planner"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="17dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewGraph"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+
+                <!--Linear layout to display pie chart -->
+                <!-- and details of pie chart-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!--Pie chart to display the data-->
+
+                    <org.eazegraph.lib.charts.PieChart xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/piechart"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+
+                        />
+
+                    <!--Creating another linear layout -->
+                    <!-- to display pie chart details -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <!--View to display the yellow color icon-->
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Pengeluaran_JP" />
+
+                            <!--Text view to display R -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/jangka_panjang" />
+
+                        </LinearLayout>
+
+                        <!--Linear layout to display Python-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <!--View to display the green color icon-->
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Pengeluaran_Bulanan_Primer" />
+
+                            <!--Text view to display python text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/kebutuhan_primer" />
+
+                        </LinearLayout>
+
+                        <!--Linear layout to display C++-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <!--View to display the red color icon-->
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Pengeluaran_Bulanan_Sekunder" />
+
+                            <!--Text view to display C++ text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/kebutuhan_sekunder" />
+
+                        </LinearLayout>
+
+                        <!--Linear layout to display Java-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+
+                            <!--View to display the blue color icon-->
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/Sisa_Saldo" />
+
+                            <!--Text view to display Java text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="@string/sisa_saldo" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Another Card view for displaying -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewGraph"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <!--Relative layout to display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="56dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/Pengeluaran_JP"
+                        android:elevation="20dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:scaleX="1.3"
+                                android:scaleY="1.3"
+                                android:src="@drawable/ic_desc"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="Pengeluaran Jangka Panjang"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_peng_lap_jp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_persen_peng_jp"
+                                        android:layout_width="45dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="@string/persen"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/Pengeluaran_Bulanan_Primer"
+                        android:elevation="20dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:scaleX="1.3"
+                                android:scaleY="1.3"
+                                android:src="@drawable/ic_desc"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="Pengeluaran Kebutuhan Primer"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_peng_lap_primer"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_persen_peng_lap_primer"
+                                        android:layout_width="45dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="@string/persen"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/Pengeluaran_Bulanan_Sekunder"
+                        android:elevation="20dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:scaleX="1.3"
+                                android:scaleY="1.3"
+                                android:src="@drawable/ic_desc"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="Pengeluaran Kebutuhan Sekunder"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_peng_lap_sekunder"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_persen_peng_lap_sekunder"
+                                        android:layout_width="45dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="@string/persen"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/Sisa_Saldo"
+                        android:elevation="20dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:scaleX="1.3"
+                                android:scaleY="1.3"
+                                android:src="@drawable/ic_desc"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-light"
+                                    android:text="Sisa Saldo"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_lap_sisa_saldo"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_persen_lap_sisa_saldo"
+                                        android:layout_width="45dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-light"
+                                        android:text="@string/persen"
+                                        android:textColor="@color/white"
+                                        android:gravity="end"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+<!--    end content-->
+
+    <!--  Start Button App Bar  -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="20dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavbar"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:menu="@menu/navigasi_bawah" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:layout_anchor="@id/bottomAppBar"/>
+    <!--  End Button App Bar  -->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout >

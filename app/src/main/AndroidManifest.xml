@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kelompok3.plannyup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_removebg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_removebg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Plannyup"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".manajemen_laporan_pengeluaran.Laporan_Pengeluaran"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".manajemen_user.InputUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manajemen_pengeluaran.pengeluaran_jp.FromEditPengeluaranJpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".manajemen_pengeluaran.pengeluaran_jp.showDataPengeluaranJpActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".laporan.manajemen_laporan_finansial_planner.LaporanFinansialPlannerActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".activity_tambahan.PilihanMenuFormInputActivity"
+            android:exported="true" />
+        <activity
+            android:name=".manajemen_pengeluaran.pengeluaran_jp.FormInputPengeluaranJpActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".manajemen_pengeluaran.pengeluaran_bulanan.FormInputPengeluaranBulananActivity"
+            android:exported="true" />
+        <activity
+            android:name=".manajemen_user.UserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".manajemen_user.EditUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".landing_page.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".landing_page.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

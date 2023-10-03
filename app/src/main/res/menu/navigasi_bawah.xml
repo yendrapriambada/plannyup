@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/menu_lap_peng"
+        android:title="@string/laporan_pengeluaran"
+        android:icon="@drawable/ic_desc"/>
+
+    <item
+
+        android:title="" />
+    <item
+        android:id="@+id/menu_lap_financial_planner"
+        android:title="@string/laporan_financial_planner"
+        android:icon="@drawable/ic_date"/>
+    <item
+        android:id="@+id/menu_user"
+        android:title="@string/profil"
+        android:icon="@drawable/ic_user"/>
+</menu>

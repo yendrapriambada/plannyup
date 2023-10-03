@@ -1,0 +1,104 @@
+<resources>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="planny_up">PlannyUp!</string>
+    <string name="nama_user">Nama User</string>
+    <string name="uang">Rp50.000.000,00</string>
+    <string name="tanggal">Januari, 2021</string>
+    <string name="detail">Detail</string>
+    <string name="rencana_pengeluaran">Rencana Pengeluaran</string>
+    <string name="bulanan_dan_jangka_panjang">Bulanan dan Jangka Panjang</string>
+    <string name="tambah">Tambah</string>
+    <string name="planny_in">Planny In</string>
+    <string name="planny_out">Planny Out</string>
+    <string name="big_plan">Big Plan</string>
+    <string name="planny_report">Planny Report</string>
+    <string name="planny_finport">Planny Finport</string>
+    <string name="planny_profile">Planny Profile</string>
+    <string name="laporan_cat_pengeluaran">Laporan Catatan Pengeluaran</string>
+    <string name="uang_pengeluaran">Rp20.000.000,00.</string>
+    <string name="laporan_financial_planner">Laporan Financial Planner</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="plan_pengeluaran_jangka_panjang">Plan Pengeluaran Jangka Panjang</string>
+    <string name="naik_haji">Naik Haji</string>
+    <string name="uang_naik_haji">Rp85.000.000,00.</string>
+    <string name="reminder_pengeluaran">Reminder pengeluaran</string>
+    <string name="bayar_listrik">Bayar Listrik</string>
+    <string name="rp100_000_00">Rp100.000,00</string>
+    <string name="bayar_spp">Bayar SPP</string>
+    <string name="bayar_pdam">Bayar PDAM</string>
+    <string name="rp150_000_00">Rp150.000,00</string>
+    <string name="home">Home</string>
+    <string name="laporan_pengeluaran">Laporan Pengeluaran</string>
+    <string name="profil">Profil</string>
+    <string name="input_profil_pengguna">Input Profil Pengguna</string>
+    <string name="username">Username</string>
+    <string name="date">Date</string>
+    <string name="pemasukan_perbulan">Pemasukan Perbulan</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="rp12_000_000">Rp12.000.000</string>
+    <string name="alexandra_gmail_com">alexandra@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="_085625421589">085625421589</string>
+    <string name="nomor_hp">Nomor HP</string>
+    <string name="_13_mei_2021">13 Mei 2021</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="majalengka">Majalengka</string>
+    <string name="tempat_lahir">Tempat Lahir</string>
+    <string name="alexandra_nova">Alexandra Nova</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="form_input_pengeluaran">Form Input Pengeluaran</string>
+    <string name="form_input_pemasukan">Form Input Pemasukan</string>
+    <string name="form_input_pengeluaran_bulanan">Form Input Pengeluaran Bulanan</string>
+    <string name="form_input_pengeluaran_jangka_panjang">Form Input Pengeluaran Jangka Panjang</string>
+    <string name="app_name">PlannyUp!</string>
+    <string name="laporan_finansial_planner">Laporan Finansial Planner</string>
+    <string name="jangka_panjang">Jangka Panjang</string>
+    <string name="kebutuhan_primer">Kebutuhan Primer</string>
+    <string name="kebutuhan_sekunder">Kebutuhan Sekunder</string>
+    <string name="sisa_saldo">Sisa Saldo</string>
+    <string name="rp_10_000_000_00">Rp 10.000.000,00</string>
+    <string name="persen">%</string>
+    <string name="data_pengeluaran_jangka_panjang">Data Pengeluaran Jangka Panjang</string>
+    <string name="harga_jp">Harga</string>
+    <string name="nama_pengeluaran_jp">Nama Pengeluaran</string>
+    <string name="jangka_waktu_menabung">Jangka Waktu</string>
+    <string name="nominal_simpanan_per_bulan">Nominal Simpanan per Bulan</string>
+    <string name="form_edit_pengeluaran">Form Edit Pengeluaran</string>
+    <string name="delete">Delete</string>
+    <string name="status_pengeluaran_jangka_panjang">Status Pengeluaran Jangka Panjang</string>
+    <string name="selesai">Selesai</string>
+    <string name="berjalan">Berjalan</string>
+    <string name="nama_pengeluaran_bulanan">Nama Pengeluaran Bulanan</string>
+    <string name="nominal_pengeluaran">Nominal Pengeluaran</string>
+    <string name="batas_waktu_bayar">Batas Waktu Pembayaran</string>
+    <string name="jenis_pengeluaran">Jenis Pengeluaran</string>
+    <string name="bulan_pengeluaran">Bulan Pengeluaran</string>
+    <string name="riwayat_pengeluaran_bulanan">Riwayat Pengeluaran Bulanan</string>
+    <string-array name="jenis_pengeluaran">
+        <item>Kebutuhan Primer</item>
+        <item>Kebutuhan Sekunder</item>
+    </string-array>
+    <string-array name="filter_byBulan_lpBulanan">
+        <item> </item>
+        <item>Semua</item>
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+    <string-array name="filter_byStatus_lpJp">
+        <item> </item>
+        <item>Semua</item>
+        <item>Berjalan</item>
+        <item>Selesai</item>
+    </string-array>
+</resources>

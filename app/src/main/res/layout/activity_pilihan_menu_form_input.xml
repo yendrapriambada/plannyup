@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity_tambahan.PilihanMenuFormInputActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/gradient_layout"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <!--   layout Title PlannyUP!   -->
+            <TextView
+                android:id="@+id/tv_judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/planny_up" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_input_pemasukan"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:text="@string/form_input_pemasukan"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <Button
+            android:id="@+id/btn_input_pengeluaran_b"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:text="@string/form_input_pengeluaran_bulanan"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="216dp" />
+
+        <Button
+            android:id="@+id/btn_input_pengeluaran_jp"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:text="@string/form_input_pengeluaran_jangka_panjang"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="20dp"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="672dp"
+            tools:ignore="BottomAppBar,MissingConstraints">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavbar"
+                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:menu="@menu/navigasi_bawah" >
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            app:layout_anchor="@id/bottomAppBar"
+            tools:layout_editor_absoluteX="177dp"
+            tools:layout_editor_absoluteY="637dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
